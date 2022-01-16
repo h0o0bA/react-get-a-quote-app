@@ -11,3 +11,48 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+.FormBox {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2%;
+  box-shadow: 0 2px 4px -1px rgb(0 0 0 / 20%), 0 4px 5px 0 rgb(0 0 0 / 14%),
+    0 1px 10px 0 rgb(0 0 0 / 12%);
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 800px !important;
+}
+
+.main-div {
+  margin: "10px auto";
+  box-shadow: 0 2px 1px -1px rgb(0 0 0 / 20%), 0 1px 1px 0 rgb(0 0 0 / 14%),
+    0 1px 3px 0 rgb(0 0 0 / 12%);
+  max-width: 600px;
+  margin: 10px auto;
+  padding: 16px;
+  border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+}
+
+.ant-form {
+  margin: 0 auto !important;
+  padding: 2% !important;
+}
+
+.ant-form-item-label {
+  min-width: 180px !important;
+}
+
+.ant-form-item-control {
+  max-width: 240px !important;
+  margin: 0 auto;
+}
+
+.ant-btn {
+  margin: 4px;
+}
