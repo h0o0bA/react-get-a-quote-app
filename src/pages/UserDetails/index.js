@@ -1,20 +1,3 @@
-// import React from 'react';
-// import CreateApplicant from '../../components/create'
-// import { useNavigate } from 'react-router-dom';
-// import { Button } from 'antd';
-// const UserDetails = () => {
-//     let navigate = useNavigate();
-//     return (
-//         <>
-//             <h1>User Details</h1>
-//             <Button type="primary" onClick={() => {navigate('/')}}>Back</Button>
-//             <CreateApplicant />
-//         </>
-//     );
-// }
-
-// export default UserDetails;
-
 import React, { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { Button, Form, Input, Select } from "antd";
@@ -25,10 +8,8 @@ import { useCreateCommercialApplicantMutation } from "../../services/commercialA
 const { Option } = Select;
 
 const UserDetails = () => {
-  const [
-    createApplicant,
-    responseInfo,
-  ] = useCreateCommercialApplicantMutation();
+  const [createApplicant, responseInfo] =
+    useCreateCommercialApplicantMutation();
   const { buisnessUser } = useSelector((state) => state.buisnessUser);
   const dispatch = useDispatch();
   let navigate = useNavigate();
@@ -140,7 +121,7 @@ const UserDetails = () => {
             Back
           </Button>
           <Button type="primary" htmlType="submit">
-            Next
+            Submit
           </Button>
         </Form.Item>
       </Form>
