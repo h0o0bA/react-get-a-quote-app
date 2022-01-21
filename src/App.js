@@ -1,6 +1,6 @@
 import React from "react";
 import "./App.css";
-import { useSelector } from "react-redux";
+// import { useSelector } from "react-redux";
 
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import UserInfo from "./pages/UserInfo";
@@ -8,7 +8,7 @@ import UserDetails from "./pages/UserDetails";
 import FinalScreen from "./pages/FinalScreen";
 
 function App() {
-  const { buisnessUser } = useSelector((state) => state.buisnessUser);
+  // const { buisnessUser } = useSelector((state) => state.buisnessUser);
   return (
     <Router>
       <div className="App">
